@@ -35,7 +35,7 @@ library(tidyr)
 extra_data1 <- 
   raw_data %>% 
   # Separate out name
-  separate(name, sep = ",", into = c("type", "roastery", "origin"))
+  separate(name, sep = ", ", into = c("type", "roastery", "origin"))
 ```
 
 #### Sample Separated Fields
@@ -79,19 +79,19 @@ extra_data2 <-
 
 #### Sample Extra Fields
 
-| batch\_name | roast\_date | variety | roast  |  dose | decaf |
-| :---------- | :---------- | :------ | :----- | ----: | :---- |
-| Sao Joao    | 2020-08-18  | bourbon | medium | 18.20 | NA    |
-| Sao Joao    | 2020-08-18  | bourbon | medium | 18.10 | NA    |
-| Sao Joao    | 2020-08-18  | bourbon | medium | 18.10 | NA    |
-| Sao Joao    | 2020-08-18  | bourbon | medium | 18.05 | NA    |
-| Sao Joao    | 2020-08-18  | bourbon | medium | 18.05 | NA    |
+| batch\_name           | variety | roast\_date | roast  | dose | other   | decaf |
+| :-------------------- | :------ | :---------- | :----- | ---: | :------ | :---- |
+| Reunidas De Cachoeira | catuai  | 2020-11-03  | medium |   18 | no tamp | NA    |
+| Reunidas De Cachoeira | catuai  | 2020-11-03  | medium |   18 | no tamp | NA    |
+| Reunidas De Cachoeira | catuai  | 2020-11-03  | medium |   18 | NA      | NA    |
+| Reunidas De Cachoeira | catuai  | 2020-11-03  | medium |   18 | NA      | NA    |
+| Reunidas De Cachoeira | catuai  | 2020-11-03  | medium |   18 | NA      | NA    |
 
 The data now has the following fields;  
 *id*, *type*, *roastery*, *origin*, *createdAt*, *temperature*, *grind*,
 *tasty*, *note*, *total time*, *average flowrate*, *total weight*, *brew
-data*, *batch\_name*, *roast\_date*, *variety*, *roast*, *dose*,
-*decaf*.
+data*, *batch\_name*, *variety*, *roast\_date*, *roast*, *dose*,
+*other*, *decaf*.
 
 ## Flow Rate Data
 
@@ -148,7 +148,7 @@ flow_data %>%
   scale_y_continuous("flow rate", labels = function(x)paste0(x, "g/s"))
 ```
 
-<img src="README_files/figure-gfm/unnamed-chunk-9-1.png" width="864" style="display: block; margin: auto;" />
+<img src="README_files/figure-gfm/unnamed-chunk-10-1.png" width="864" style="display: block; margin: auto;" />
 
 ``` r
 flow_data %>%
@@ -161,7 +161,7 @@ flow_data %>%
   ggtitle("Weight over Time")
 ```
 
-<img src="README_files/figure-gfm/unnamed-chunk-10-1.png" width="864" style="display: block; margin: auto;" />
+<img src="README_files/figure-gfm/unnamed-chunk-11-1.png" width="864" style="display: block; margin: auto;" />
 
 ### Advanced
 
@@ -263,7 +263,7 @@ flow_data_adv %>%
   scale_y_continuous("flow rate", labels = function(x)paste0(x, "g/s"))
 ```
 
-<img src="README_files/figure-gfm/unnamed-chunk-12-1.png" width="864" style="display: block; margin: auto;" />
+<img src="README_files/figure-gfm/unnamed-chunk-13-1.png" width="864" style="display: block; margin: auto;" />
 
 ``` r
 flow_data_adv %>%
@@ -276,4 +276,4 @@ flow_data_adv %>%
   ggtitle("Weight over Time")
 ```
 
-<img src="README_files/figure-gfm/unnamed-chunk-13-1.png" width="864" style="display: block; margin: auto;" />
+<img src="README_files/figure-gfm/unnamed-chunk-14-1.png" width="864" style="display: block; margin: auto;" />

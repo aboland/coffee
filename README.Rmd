@@ -29,7 +29,7 @@ This is a repo for analysing data from the Acaia Lunar scales.
 new_grinder <- as.Date("2020-08-18")
 raw_data <- 
   readr::read_csv("data/brewmaster2_latest.csv") %>%
-  filter(createdAt > new_grinder, id != "TOljBAo2Uo")
+  filter(createdAt > new_grinder, !id %in% c("TOljBAo2Uo", "n9JRVOahqk"))
 ```
 
 
@@ -58,8 +58,17 @@ library(tidyr)
 extra_data1 <- 
   raw_data %>% 
   # Separate out name
-  separate(name, sep = ",", into = c("type", "roastery", "origin"))
+  separate(name, sep = ", ", into = c("type", "roastery", "origin"))
 ```
+
+```{r, echo =F}
+remove_test <- which(extra_data1$roastery != "Test")
+extra_data1 <- extra_data1[remove_test, ]
+raw_data <- raw_data[remove_test, ]
+```
+
+
+
 
 #### Sample Separated Fields
 ```{r , echo = FALSE}

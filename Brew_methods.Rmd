@@ -1,0 +1,94 @@
+---
+output: 
+  pdf_document:
+    extra_dependencies: ["textcomp"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## V60
+
+Ratio: ~16:1 (30g$\rightarrow$ 500)
+
+Temp: 100\textcelsius{}
+
+Grind: Medium Fine
+
+1. Rinse Paper, empty water from jug.
+2. Pour in coffee and make well (dip) in bed.
+3. **Bloom** pour 2x coffee dose in water.
+    - Swirl a lot to wet all of coffee.
+4. Wait 30 seconds.
+1. Spiral pour ~60% of water in next 30 seconds.
+1. Steady pour, keep water level topped up over next 30 seconds until 100% of water.
+1. Stir in both directions.
+1. After draining a bit, swirl!
+1. Wait for drain.
+
+Final coffee bed should be flat, total time in the region of 3:30.
+
+
+
+## Espresso
+
+Ratio ~2:1 (18g$\rightarrow$ 36)
+
+Grind: To taste (2-3 on grinder)
+
+1. Heat portafiler (hot water).
+1. Grind 18g of coffee into dry portafilter.
+1. Use WDT to mix coffee.
+1. Spin leveler to level coffee.
+1. Run machine with no portafilter to warm water.
+1. Tamp and attach portafilter to machine.
+1. Hold button for 8 to 10 seconds then release.
+1. Press button to stop once weight is within 2 to 3g of desired final weight.
+
+For americano add 2 to 3 times weight of espresso in hot water.
+
+
+## Clever Dripper
+
+Ratio ~16:1 (25g$\rightarrow$ 250)
+
+Temp: 100\textcelsius{}
+
+Grind: Medium fine?
+
+1. Fold the edges of your filter, fit it into the Clever, rinse it with hot water.
+1. Add all water.
+1. Add coffee and briefly stir to break up any bubbles or clumps.
+1. Let steep for two minutes.
+1. Stir briefly and allow floating grounds to fall.
+1. Wait another 30 seconds before draining.
+
+
+\newpage
+## Aeropress
+
+### James Hoffmann (Upright)
+
+Ratio: $\approx$ 18:1 (11g$\rightarrow$ 200)
+
+1. Add coffee, shake to level
+1. Add all water
+1. Insert plunger to form seal
+1. After 2 minutes, swirl
+1. After another 30 seconds plunge gently
+
+### Inverted
+
+1. Add coffee, shake to level
+1. Add 2x water and stir
+1. Add remaining water
+1. After 2 minutes close lid and flip
+1. Allow to settle for a few seconds and then gently plunge
+
+
+
+
+
+
+

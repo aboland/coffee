@@ -17,7 +17,7 @@ library(lubridate)
 
 theme_set(theme_light())
 
-brewmaster_raw <- readr::read_csv("data/brewmaster2_latest.csv")
+brewmaster_raw <- readr::read_csv("../data/brewmaster2_latest.csv")
 new_grinder <- as.Date("2020-08-18")
 brewmaster_raw <- 
   brewmaster_raw %>%
